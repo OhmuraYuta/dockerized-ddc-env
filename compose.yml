@@ -1,0 +1,9 @@
+services:
+  linux:
+    build: .
+    volumes:
+      - ./:/volumes_dir
+      - ./plugged:/root/.vim/plugged
+      - ./lsp-servers:/root/.local/share/vim-lsp-settings/servers
+    tty: true
+    stdin_open: true
